@@ -1,6 +1,7 @@
 # Work-Day-Scheduler
 Real-time display on top
-hen entering text and pressing 💾, the data including text and time will be saved to local storage.
+
+When entering text and pressing 💾, the data including text and time will be saved to local storage.
 
 # Links
 Website: https://minhkhoinguy.github.io/Work-Day-Scheduler/
