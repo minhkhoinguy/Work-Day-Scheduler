@@ -4,19 +4,15 @@ $("#currentDay").text(time);
 
 
 //locally stored data
-var todos = document.getElementById("todo");
-var saveButton = document.getElementById('save');
+var saveBtn = document.querySelectorAll('.saveBtn');
 
-function saveSchedule() {
-
-    var schedule = {
-      todos: todos.value.trim()
-    };
-
-    localStorage.setItem("schedule", JSON.stringify(schedule));
-    saveButton.addEventListener("click", function(event) {
-        event.preventDefault();
-        saveSchedule();
-    });
-}
-
+let schedule = JSON.parse(localStorage.getItem('schedule')) || [];
+saveBtn.forEach(function (saves) {
+    saves.addEventListener('click', function (event) {
+        let row = event.target.parentNode
+        let myContent = row.querySelector('.description').value;
+        let hour = row.querySelector('.hour').textContent;
+        schedule.push({myContent,hour});
+        localStorage.setItem('schedule', JSON.stringify(schedule));
+    })
+})
