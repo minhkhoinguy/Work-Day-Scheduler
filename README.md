@@ -1,9 +1,14 @@
 # Work-Day-Scheduler
-Real-time display on top
+I WANT Real-time display on top.
 
-When entering text and pressing 💾, the data including text and time will be saved to local storage.
+I WANT the data I input to be stored
 
-<img src="./Assets/screenshot.png">
+WHEN entering data and pressing 💾.
+
+THEN after reloading the page, the data is still visible on the page.
+
+# Image
+<img src="./Assets/planner.gif">
 
 # Links
 Website: https://minhkhoinguy.github.io/Work-Day-Scheduler/
